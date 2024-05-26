@@ -4,7 +4,7 @@ import { DELETE_TODO, EDIT_TODO, SET_EDIT_IND, SET_INPUT_VAL, UPDATE_TODO, ADD_T
 
 const initialState = {
     // data: [],
-    data: JSON.parse(localData("get")),
+    data: JSON.parse(localData("get")) || [],
     input: "",
     editInd: -1
 }

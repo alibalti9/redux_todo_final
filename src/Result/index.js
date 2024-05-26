@@ -13,7 +13,7 @@ const Result = ({ data, editInd }) => {
         dispatch(editTodo(i))
     }
     return (
-        data.map((item, index) => (
+        !!data?.length && data?.map((item, index) => (
             <div className="result">
                 <p key={index}>{index}. {item}</p>
                 <Button disable={editInd !== -1 } type={"button"} txt={"Edit"} clickFunc={() => edit(index)} />
