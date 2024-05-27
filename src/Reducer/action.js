@@ -1,7 +1,12 @@
-import {SET_EDIT_IND, SET_INPUT_VAL, DELETE_TODO, EDIT_TODO, UPDATE_TODO, ADD_TODO} from "./actiontype";
+import {SET_EDIT_IND, SET_INPUT_VAL, DELETE_TODO, EDIT_TODO, UPDATE_TODO, ADD_TODO, CANCEL_EDIT} from "./actiontype";
 
 const setInputVal = (payload) => ({
     type: SET_INPUT_VAL,
+    payload,
+})
+
+const cancelEdit = (payload) => ({
+    type: CANCEL_EDIT,
     payload,
 })
 
@@ -30,4 +35,4 @@ const updateTodo = (payload) => ({
     payload,
 })
 
-export {setEditInd, setInputVal, addTodo, deleteTodo, editTodo, updateTodo}
+export {setEditInd, setInputVal, addTodo, deleteTodo, editTodo, updateTodo, cancelEdit}

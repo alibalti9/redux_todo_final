@@ -1,4 +1,4 @@
-const Button = ({ txt, clickFunc, type, disable, style }) => {
-    return <button style={style} disabled={disable} onClick={clickFunc} type={type}>{txt}</button>
+const Button = ({ txt, clickFunc, type, disable, style, className }) => {
+    return <button className={className} style={style} disabled={disable} onClick={clickFunc} type={type}>{txt}</button>
 }
 export default Button;

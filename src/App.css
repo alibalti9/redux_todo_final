@@ -94,6 +94,10 @@ form{
   width: 50%;
 }
 
+.hiddenButton{
+  display: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

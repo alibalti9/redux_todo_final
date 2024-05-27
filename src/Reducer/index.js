@@ -1,6 +1,6 @@
 // import localStorage from "../helper";
 import { localData } from "../helper";
-import { DELETE_TODO, EDIT_TODO, SET_EDIT_IND, SET_INPUT_VAL, UPDATE_TODO, ADD_TODO } from "./actiontype";
+import { DELETE_TODO, EDIT_TODO, SET_EDIT_IND, SET_INPUT_VAL, UPDATE_TODO, ADD_TODO, CANCEL_EDIT } from "./actiontype";
 
 const initialState = {
     // data: [],
@@ -60,6 +60,12 @@ const TodoReducer = (state = initialState, action) => {
                 input: "",
                 editInd: -1
             }
+            case CANCEL_EDIT:
+                return{
+                    ...state,
+                    input: "",
+                    editInd: -1
+                }
         default:
             return {
                 ...state
