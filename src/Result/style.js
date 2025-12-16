@@ -5,10 +5,16 @@ export const Style = {
         padding: '30px',
         flexDirection: 'column',
         flex: 1,
-        gap: 15
+        gap: '20px',
+        background: 'linear-gradient(135deg, #2e7d32, #66bb6a)',
+        borderRadius: '20px',
+        boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
     },
     contentMain: {
         display: 'flex',
+        flexDirection: 'row',
+        gap: '15px',
     },
     para: {
         textAlign: 'start',
@@ -17,13 +23,4 @@ export const Style = {
         overflow: 'hidden',
         whiteSpace: 'nowrap',
         textOverflow: 'ellipsis',
-        color: 'white',
-        fontFamily: 'cursive',
-        textDecoration: 'none',
-        borderRadius: '16px',
-        paddingLeft: '20px'
-
-
-
-    }
-}
+        color: '#F0F5E6',
